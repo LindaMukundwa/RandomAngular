@@ -1,0 +1,148 @@
+/* account-settings.component.scss */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barrio&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Monoton&family=Roboto+Slab:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+    .logo {
+        img {
+            height: 80px;
+            width: auto;
+        }
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    color: black;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    /*background-color: #04AA6D;*/
+    color: black;
+    border: 2px solid #555;
+    border-radius: 10px;
+}
+
+.account-header {
+    background-color: #555c80;
+    text-emphasis-color: white;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-family: "Roboto Slab", serif;
+    font-size: 2rem;
+}
+
+.account-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: "Roboto Slab", serif;
+
+    .profile-picture {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        button {
+            margin-top: 1rem;
+            border-radius: 10px;
+        }
+    }
+
+    form {
+        display: grid;
+        gap: 1rem;
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            label {
+                font-weight: bold;
+                min-width: 120px; /* Fixed width for labels */
+                text-align: right;
+            }
+
+            input {
+                flex: 1;
+                padding: 0.5rem;
+                border-radius: 30px;
+                text-align: left;
+                font-family: "Roboto Slab", serif;
+                color: grey;
+                font-size: 11px;
+                border: 1px solid #ccc;
+            }
+        }
+
+        button[type="submit"] {
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #04AA6D;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: "Roboto Slab", serif;
+
+            &:hover {
+                background-color: #038857;
+            }
+        }
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        background-color: lightgrey;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: "Roboto Slab", serif;
+        margin-top: 1rem;
+
+        &:hover {
+            background-color: darkgrey;
+        }
+    }
+}
